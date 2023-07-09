@@ -12,13 +12,10 @@ class HomeController extends Controller
 
     public function index()
     {
-        //to get only flutter
-        $product = Product::find(2);
-         $cat = $product->category;
-        //get all products from the mobile category table
-        //$cat = Category::find(2);
-       // $products = $cat -> products;
-        return view('index',compact('cat'));
+        //get all products from the mobile category
+        $cat = Category::find(2);
+        $products = $cat -> products;
+        return view('index',compact('products'));
 
       
     }

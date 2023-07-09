@@ -3,10 +3,8 @@
 
 @section('content')
 
-{{-- @foreach ($products as $product )
+@foreach ($products as $product )
     {{ $product->name }} : {{ $product->price }}
-@endforeach --}}
-
-{{ $cat->name }}
+@endforeach
 
 @endsection
