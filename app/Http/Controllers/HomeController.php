@@ -15,7 +15,7 @@ class HomeController extends Controller
         //to get only flutter
         $product = Product::find(2);
          $cat = $product->category;
-        //get all products from the mobile category
+        //get all products from the mobile category table
         //$cat = Category::find(2);
        // $products = $cat -> products;
         return view('index',compact('cat'));
